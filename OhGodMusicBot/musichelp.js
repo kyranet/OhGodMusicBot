@@ -1,15 +1,16 @@
 exports.run = (client, msg) => {
+	const p = client.config.prefix;
 	const tosend = [
-		`${client.config.prefix}join : "Join Voice channel of msg sender"`,
-		`${client.config.prefix}add : "Add a valid youtube link to the queue"`,
-		`${client.config.prefix}queue : "Shows the current queue, up to 15 songs shown."`,
-		`${client.config.prefix}play : "Play the music queue if already joined to a voice channel"`,
+		`${p}join : "Join Voice channel of msg sender"`,
+		`${p}add : "Add a valid youtube link to the queue"`,
+		`${p}queue : "Shows the current queue, up to 15 songs shown."`,
+		`${p}play : "Play the music queue if already joined to a voice channel"`,
 		'',
 		'the following commands only function while the play command is running:'.toUpperCase(),
-		`${client.config.prefix}pause : "pauses the music"`,
-		`${client.config.prefix}resume : "resumes the music"`,
-		`${client.config.prefix}skip : "skips the playing song"`,
-		`${client.config.prefix}time : "Shows the playtime of the song."`,
+		`${p}pause : "pauses the music"`,
+		`${p}resume : "resumes the music"`,
+		`${p}skip : "skips the playing song"`,
+		`${p}time : "Shows the playtime of the song."`,
 		'volume+(+++) : "increases volume by 2%/+"',
 		'volume-(---) : "decreases volume by 2%/-"'
 	];
